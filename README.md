@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Nonprofit Matcher
+
+A quick web app that helps companies discover nonprofits to donate to, based on their values and preferences.
+
+---
 
 ## Getting Started
 
-First, run the development server:
+### 1. Install dependencies
+
+```bash
+npm install
+```
+
+### 2. Start the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit: [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## If `npm run dev` doesn’t work
 
-## Learn More
+You may not have Node.js installed.
 
-To learn more about Next.js, take a look at the following resources:
+1. Download it from: https://nodejs.org/
+2. Install version 18 or later
+3. Confirm it's installed:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+node -v
+npm -v
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Then retry:
 
-## Deploy on Vercel
+```bash
+npm install
+npm run dev
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## How It Works
+
+- The user fills out a short quiz specifying their values:
+  - Preferred cause (e.g. climate, education, health)
+  - Local or global scope
+  - Nonprofit size
+  - Number of nonprofits to display
+
+- The app sends this info to **Google’s Gemini API**, which returns a list of nonprofits in JSON format.
+
+- Each nonprofit is shown in a card with:
+  - Name
+  - Mission
+  - Cause
+  - Location
+  - Annual Donations
+  - People Affected
+  - Website link
+
+- The user can navigate through suggestions using left/right buttons.
+
+---
+
+## Write Up
+
+This is a quick web app that accepts filters or wants from a user, and then generates a list of charities fitting those criteria, displaying high-level info and providing a link to go to the website. 
+
+It inherently uses Google's Gemini API to find the charities based on criteria. 
+
+Given more time, I would like to see if I could download a CSV—like the example nonprofits.json that is not used in the project, since I decided to use the LLM instead–or use a databse API so I can pull data about nonprofits/charities around the world, and write my own logic that can help hone in on what charities the company would like.
+
+An LLM might be very general and choose the mainstream ones, but if I have access to a large database of nonprofit data, I can do data-manipulation to do things like filter based on other factors, or add a randomness factor, etc. But the LLM is good for getting a good list for a 2 hour project.
+
+I used ChatGPT to streamline the tailwind css portions of this project, and for debugging.

@@ -1,0 +1,56 @@
+[
+  {
+    "name": "GreenFuture",
+    "cause": "climate",
+    "scope": "global",
+    "size": "large",
+    "mission": "Fighting climate change with global policy and innovation.",
+    "location": "Global",
+    "website": "https://greenfuture.org"
+  },
+  {
+    "name": "Books for All",
+    "cause": "education",
+    "scope": "local",
+    "size": "small",
+    "mission": "Improving childhood literacy in underserved communities.",
+    "location": "Chicago, IL",
+    "website": "https://booksforall.org"
+  },
+  {
+    "name": "HealthBridge",
+    "cause": "health",
+    "scope": "global",
+    "size": "large",
+    "mission": "Providing healthcare infrastructure to developing countries.",
+    "location": "Global",
+    "website": "https://healthbridge.org"
+  },
+  {
+    "name": "Diversity Now",
+    "cause": "dei",
+    "scope": "local",
+    "size": "small",
+    "mission": "Promoting equity through education and activism.",
+    "location": "Oakland, CA",
+    "website": "https://diversitynow.org"
+  },
+  {
+    "name": "GreenFuture2",
+    "cause": "climate",
+    "scope": "global",
+    "size": "large",
+    "mission": "Fighting climate change with global policy and innovation.",
+    "location": "Global",
+    "website": "https://greenfuture.org"
+  },
+  {
+    "name": "GreenFutur3",
+    "cause": "climate",
+    "scope": "global",
+    "size": "large",
+    "mission": "Fighting climate change with global policy and innovation.",
+    "location": "Global",
+    "website": "https://greenfuture.org"
+  }
+]
