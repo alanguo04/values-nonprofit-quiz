@@ -78,3 +78,7 @@ Given more time, I would like to see if I could download a CSV—like the exampl
 An LLM might be very general and choose the mainstream ones, but if I have access to a large database of nonprofit data, I can do data-manipulation to do things like filter based on other factors, or add a randomness factor, etc. But the LLM is good for getting a good list for a 2 hour project.
 
 I used ChatGPT to streamline the tailwind css portions of this project, and for debugging.
+
+5/14 notes for myself:
+
+If I were to improve, one idea is to have user selected a goal of how many people to impact in x sector, and it will compile a portfolio of charities to invest into. I.e. user says I want to feed 10,000,000 meals to starving children, and it will give a list of charities and how much to donate in order to reach the quota
